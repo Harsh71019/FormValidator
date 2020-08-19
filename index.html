@@ -23,6 +23,7 @@
             minlength="3"
             maxlength="100"
             required
+            name="name"
             type="text"
             id="name"
             placeholder="Enter the Name"
@@ -36,6 +37,7 @@
             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
             type="tel"
             id="phone"
+            name="phone"
             placeholder="888-888-8888"
           />
         </div>
@@ -44,6 +46,7 @@
           <label for="email">Email Address</label>
           <input
             required
+            name="email"
             type="email"
             id="email"
             placeholder="Enter the Email"
@@ -56,6 +59,7 @@
             required
             type="url"
             id="website"
+            name="website"
             placeholder="Enter the Website Link"
           />
         </div>
@@ -66,6 +70,7 @@
             type="password"
             id="password1"
             placeholder="Enter the Password"
+            name="password"
             required
             pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
           />
