@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link rel="icon" type="image/png" href="favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sign Up Today!</h1>
+      <!-- Form -->
+      <form id="form" >
+        <!-- Full Name  -->
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input
+            minlength="3"
+            maxlength="100"
+            required
+            type="text"
+            id="name"
+            placeholder="Enter the Name"
+          />
+        </div>
+        <!-- Phone Number  -->
+        <div class="form-group" >
+          <label for="phone">Phone Number</label>
+          <input
+            required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            type="tel"
+            id="phone"
+            placeholder="888-888-8888"
+          />
+        </div>
+        <!-- Email  -->
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            required
+            type="email"
+            id="email"
+            placeholder="Enter the Email"
+          />
+        </div>
+        <!-- Website URl  -->
+        <div class="form-group">
+          <label for="website">Website URL</label>
+          <input
+            required
+            type="url"
+            id="website"
+            placeholder="Enter the Website Link"
+          />
+        </div>
+        <!-- Password -->
+        <div class="form-group">
+          <label for="password1">Password</label>
+          <input
+            type="password"
+            id="password1"
+            placeholder="Enter the Password"
+            required
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+          />
+        </div>
+        <!--Renter Password -->
+        <div class="form-group">
+          <label for="password2">Confirm Password</label>
+          <input
+            type="password"
+            id="password2"
+            placeholder="Confirm the Password(Min 8 Characters)"
+            required
+            title="Please Include one upper and lowercase and one special character and one number for ur safety"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+
+      <div class="message-container">
+        <h3 id="message">Don't Hestitate!</h3>
+      </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
